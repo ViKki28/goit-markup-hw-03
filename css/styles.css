@@ -1,0 +1,156 @@
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+
+:root {
+  --main-title-color: #2e2f42;
+  --secondary-title-color: #434455;
+  --focused-color: #4d5ae5;
+  --hero-title-color: #ffffff;
+  --backraund-btn-hover-color: #404bbf;
+  --backraund-buttons-team: #f4f4fd;
+  --footer-text-color: #e7e9fc;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--main-title-color);
+}
+/*==== Header ==== */
+
+.color-logo {
+  color: var(--focused-color);
+}
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.3;
+  color: var(--main-title-color);
+}
+.menu-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+
+  color: var(--main-title-color);
+}
+.menu-link:hover,
+.menu-link:focus {
+  color: var(--backraund-btn-hover-color);
+}
+.adress-list {
+  font-style: normal;
+
+  font-size: 16px;
+  line-height: 1.5;
+
+  color: var(--secondary-title-color);
+}
+.adress-list:hover,
+.adress-list:focus {
+  color: var(--backraund-btn-hover-color);
+}
+
+/*==== Section 1 ====*/
+
+.section-hero {
+  background: var(--main-title-color);
+}
+.hero-title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+
+  color: var(--hero-title-color);
+}
+.modal-btn {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--hero-title-color);
+  background: var(--focused-color);
+  cursor: pointer;
+}
+.modal-btn:hover {
+  background: var(--backraund-btn-hover-color);
+}
+.buttons {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--focused-color);
+  background: var(--backraund-buttons-team);
+  cursor: pointer;
+}
+.buttons:hover,
+.buttons:focus {
+  background: var(--backraund-btn-hover-color);
+  color: var(--hero-title-color);
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/*==== Section 2 ====*/
+
+.caption {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--main-title-color);
+}
+.text {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--secondary-title-color);
+}
+
+/*==== Section 3 ====*/
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  color: var(--main-title-color);
+}
+
+/*==== Section 4 ====*/
+.section-team {
+  background: var(--backraund-buttons-team);
+}
+.menu-item {
+  background: var(--hero-title-color);
+}
+/*==== Footer ====*/
+
+.footer {
+  background: var(--main-title-color);
+}
+.logo-footer {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.16;
+  color: var(--focused-color);
+}
+.color-logo-footer {
+  color: var(--backraund-buttons-team);
+}
+
+.text-footer {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--footer-text-color);
+}
