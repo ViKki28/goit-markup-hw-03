@@ -20,6 +20,10 @@ body {
 }
 /*==== Header ==== */
 
+.flex-conteiner {
+  display: flex;
+  flex-wrap: wrap;
+}
 .color-logo {
   color: var(--focused-color);
 }
