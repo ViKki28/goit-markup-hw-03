@@ -13,8 +13,8 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
-      integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
@@ -25,31 +25,31 @@
     <!-- Header -->
 
     <header class="page-header">
-      <div class="container page-header-container">
-        <nav class="page-nav page-nav">
+      <div class="container menu">
+        <nav class="menu">
           <a class="link logo" href="./index.html">
             <span class="color-logo">WEB</span>STUDIO</a
           >
           <ul class="menu list">
-            <li class="menu-item">
+            <li class="menu-item-header">
               <a class="menu-link link" href="./index.html"> Studio</a>
             </li>
-            <li class="menu-item">
+            <li class="menu-item-header">
               <a class="menu-link link" href="./portfolio.html"> Portfolio</a>
             </li>
-            <li class="menu-item">
+            <li class="menu-item-header">
               <a class="menu-link link" href="#"> Contacts</a>
             </li>
           </ul>
         </nav>
         <address class="adress">
           <ul class="menu list">
-            <li class="menu-item">
+            <li class="menu-item-header">
               <a class="adress-list link" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
-            <li class="menu-item">
+            <li class="menu-item-header">
               <a class="adress-list link" href="tel:+110001111111"
                 >+11 (000) 111-11-11</a
               >
@@ -64,14 +64,12 @@
       <!-- Section 1-->
 
       <section class="section-hero">
-        <div class="container">
-          <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button class="modal-btn" type="button">Order Service</button>
-        </div>
+        <h1 class="hero-title">Effective Solutions for Your Business</h1>
+        <button class="modal-btn" type="button">Order Service</button>
       </section>
 
       <!-- section 2 -->
-      <section class="advantages">
+      <section class="advantages sections">
         <div class="container">
           <h2 class="visually-hidden">Advantages</h2>
           <ul class="menu list">
@@ -108,65 +106,80 @@
       </section>
 
       <!-- section 3 -->
-      <section class="section-devais container">
-        <h2 class="title">What are we doing</h2>
-        <ul class="menu list">
-          <li class="menu-item">
-            <img src="./images/img1.jpg" alt="img1" width="360" height="300" />
-          </li>
-          <li class="menu-item">
-            <img
-              src="./images/Rectangle71.jpg"
-              alt="img2"
-              width="360"
-              height="300"
-            />
-          </li>
-          <li class="menu-item">
-            <img
-              src="./images/Rectangle71(1).jpg"
-              alt="img3"
-              width="360"
-              height="300"
-            />
-          </li>
-        </ul>
+      <section class="section-devais">
+        <div class="container">
+          <h2 class="title">What are we doing</h2>
+          <ul class="menu list">
+            <li class="menu-item">
+              <img
+                src="./images/img1.jpg"
+                alt="img1"
+                width="360"
+                height="300"
+              />
+            </li>
+            <li class="menu-item">
+              <img
+                src="./images/Rectangle71.jpg"
+                alt="img2"
+                width="360"
+                height="300"
+              />
+            </li>
+            <li class="menu-item">
+              <img
+                src="./images/Rectangle71(1).jpg"
+                alt="img3"
+                width="360"
+                height="300"
+              />
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- section 4 -->
-      <section class="section-team container">
-        <h2 class="title">Our Team</h2>
-        <ul class="menu list">
-          <li class="menu-item">
-            <img src="./images/img.jpg" alt="Mark" width="264" height="260" />
-            <h3 class="caption">Mark Guerrero</h3>
-            <p class="text">Product Designer</p>
-          </li>
-          <li class="menu-item">
-            <img src="./images/img(1).jpg" alt="Tom" width="264" height="260" />
-            <h3 class="caption">Tom Ford</h3>
-            <p class="text">Frontend Developer</p>
-          </li>
-          <li class="menu-item">
-            <img
-              src="./images/img(2).jpg"
-              alt="Camila"
-              width="264"
-              height="260"
-            />
-            <h3 class="caption">Camila Garcia</h3>
-            <p class="text">Marketing</p>
-          </li>
-          <li class="menu-item">
-            <img
-              src="./images/img(3).jpg"
-              alt="Daniel"
-              width="264"
-              height="260"
-            />
-            <h3 class="caption">Daniel Wilson</h3>
-            <p class="text">UI Designer</p>
-          </li>
-        </ul>
+      <section class="section-team sections">
+        <div class="container">
+          <h2 class="title">Our Team</h2>
+          <ul class="menu list">
+            <li class="employees-card">
+              <img src="./images/img.jpg" alt="Mark" width="264" height="260" />
+
+              <h3 class="caption caption-team">Mark Guerrero</h3>
+              <p class="text-team">Product Designer</p>
+            </li>
+            <li class="employees-card">
+              <img
+                src="./images/img(1).jpg"
+                alt="Tom"
+                width="264"
+                height="260"
+              />
+              <h3 class="caption caption-team">Tom Ford</h3>
+              <p class="text-team">Frontend Developer</p>
+            </li>
+            <li class="employees-card">
+              <img
+                src="./images/img(2).jpg"
+                alt="Camila"
+                width="264"
+                height="260"
+              />
+              <h3 class="caption caption-team">Camila Garcia</h3>
+              <p class="text-team">Marketing</p>
+            </li>
+            <li class="employees-card">
+              <img
+                src="./images/img(3).jpg"
+                alt="Daniel"
+                width="264"
+                height="260"
+              />
+              <h3 class="caption caption-team">Daniel Wilson</h3>
+              <p class="text-team">UI Designer</p>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <!-- Footer -->
