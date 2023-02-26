@@ -45,8 +45,7 @@ button {
   padding-left: 15px;
   padding-right: 15px;
 }
-.sections {
-  padding-top: 120px;
+.section {
   padding-bottom: 120px;
 }
 
@@ -55,6 +54,7 @@ button {
 .page-header {
   padding-top: 24px;
   padding-bottom: 24px;
+  border-bottom: 1px solid var(--footer-text-color);
 }
 
 .menu {
@@ -113,6 +113,7 @@ button {
 }
 
 .hero-title {
+  width: 496px;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
@@ -132,7 +133,7 @@ button {
   background: var(--focused-color);
   border-radius: 4px;
   border: 0;
-  display: flex;
+  display: block;
   padding-top: 16px;
   padding-bottom: 16px;
   padding-left: 32px;
@@ -147,16 +148,28 @@ button {
 /* services */
 
 .service-buttons {
-  padding-top: 96px;
-  padding-bottom: 72px;
+  padding: 96px 0 72px 0;
   display: flex;
+
   margin-left: auto;
-  margin-right: auto;
+  margin-right: 0;
+  justify-content: center;
 }
-.img-services {
-  display: block;
-  max-width: 100%;
-  height: auto;
+.menu-item-service:not(:nth-child(5n)) {
+  margin-right: 24px;
+}
+
+.text-services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px 16px;
+  gap: 8px;
+  border: 1px solid var(--footer-text-color);
+  border-top: 0;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .menu-item-cards {
   width: calc((100% - 48px) / 3);
@@ -172,8 +185,9 @@ button {
   color: var(--focused-color);
   background: var(--backraund-buttons-team);
   cursor: pointer;
-  border: 1px solid #e7e9fc;
+  border: 1px solid var(--footer-text-color);
   border-radius: 4px;
+  padding: 12px 24px 12px 24px;
 }
 .buttons:hover,
 .buttons:focus {
@@ -192,18 +206,13 @@ button {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+/*==== Section 2 ====*/
+
 .menu-item:not(:last-child) {
   flex-wrap: wrap;
   margin-right: 24px;
 }
-
-/*==== Section 2 ====*/
-
-.advantages {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
-
 .caption {
   font-weight: 500;
   font-size: 20px;
@@ -234,10 +243,15 @@ button {
 
 .section-team {
   background: var(--backraund-buttons-team);
+  padding-top: 120px;
 }
 
 .employees-card {
   background: var(--hero-title-color);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+  border-top: 0;
 }
 .employees-card:not(:nth-child(4n)) {
   margin-right: 24px;
@@ -254,9 +268,6 @@ button {
 
 /* ----- */
 
-.section-devais {
-  padding-bottom: 120px;
-}
 .services-item {
   display: flex;
   flex-wrap: wrap;
@@ -268,7 +279,7 @@ button {
 .footer {
   background: var(--main-title-color);
   padding-top: 100px;
-  padding-bottom: 188px;
+  padding-bottom: 100px;
 }
 .logo-footer {
   font-family: 'Raleway', sans-serif;
@@ -276,15 +287,21 @@ button {
   font-size: 18px;
   line-height: 1.16;
   color: var(--focused-color);
-  margin-bottom: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
 }
 .color-logo-footer {
   color: var(--backraund-buttons-team);
 }
 
 .text-footer {
+  width: 264px;
   font-size: 16px;
   line-height: 1.5;
   color: var(--footer-text-color);
   padding-top: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
 }
