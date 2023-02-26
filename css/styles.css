@@ -209,6 +209,10 @@ button {
 
 /*==== Section 2 ====*/
 
+.advantages {
+  padding-top: 120px;
+}
+
 .menu-item:not(:last-child) {
   flex-wrap: wrap;
   margin-right: 24px;
