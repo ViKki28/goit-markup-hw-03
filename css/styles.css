@@ -148,7 +148,6 @@ button {
 /* services */
 
 .service-buttons {
-  padding: 96px 0 72px 0;
   display: flex;
 
   margin-left: auto;
@@ -273,6 +272,7 @@ button {
 /* ----- */
 
 .services-item {
+  margin-top: 72px;
   display: flex;
   flex-wrap: wrap;
   column-gap: 24px;
